@@ -2,3 +2,21 @@
 @import "grid.css";
 @import "fonts.css";
 
+[data-translate] {
+    display: none;
+}
+
+input[name=translateType][id=website]:checked ~ form [data-translate=website],
+input[name=translateType][id=documents]:checked ~ form [data-translate=documents],
+input[name=translateType][id=social]:checked ~ form [data-translate=social] {
+    display: block;
+}
+
+.section-form {
+    counter-reset: count;
+}
+
+.count-group legend:before {
+    content: counter(count);
+    counter-increment: count;
+}
