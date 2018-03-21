@@ -37,7 +37,7 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
      * Using CSS counters: [developer.mozilla.org/Using_CSS_counters](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
      * Submit form using a button outside the &lt;form&gt; tag [stackoverflow.com](https://stackoverflow.com/questions/7020659/submit-form-using-a-button-outside-the-form-tag)
 
-2. Part III
+3. Part III
 
     Links:
      * Font Awesome: [fontawesome.com](https://fontawesome.com/)
@@ -46,6 +46,13 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
      * Invisible inputs notes: [gist.github.com](https://gist.github.com/AMashoshyna/04acd985e473f2b1b53b8804c6b821d7)
      * Customize Inputs CSS Examples: [codepen.io](https://codepen.io/Cath-kb/pen/mxONvw?editors=1100)
 
-HTML validator: [validator.w3.org](https://validator.w3.org)
+4. Part IV
+
+    Links:
+     * Font Awesome Icons Gallery: [fontawesome.com](https://fontawesome.com/icons?d=gallery)
+     * Web Fonts with CSS: [fontawesome.com](https://fontawesome.com/get-started/web-fonts-with-css)
+
+HTML validator: [validator.w3.org](https://validator.w3.org)  
+Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)
 
 
