@@ -2,6 +2,84 @@
 @import "grid.css";
 @import "fonts.css";
 
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: #eceef4;
+}
+
+.header > .container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 12%;
+    height: 0;
+    padding-bottom: 12%;
+    background: url("../images/logo-black-01.png") center no-repeat;
+    background-size: contain;
+    color: transparent;
+    outline: none;
+}
+
+.header .logo:hover {
+    opacity: .8;
+}
+
+.header .logo:focus,
+.header .logo:active {
+    background-image: url("../images/logo-black-02.png");
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    color: #a5abc5;
+    background: #eceef4;
+    border: 1px solid #c9d0e1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .8;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+.button:focus,
+.button:active {
+    border-color: #a5abc5;
+    box-shadow: 0 0 14px rgba(0, 0, 0, .3);
+}
+
+.button-icon:before {
+    padding-right: 1em;
+}
+
+[class*=icon] {
+    font-family: sans-serif;
+}
+
+[class*=icon].fa:before, [class*=icon].fas:before {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+}
+
+[class*=icon].far:before {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-weight: 400;
+}
+
 [data-translate] {
     display: none;
 }
