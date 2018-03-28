@@ -80,6 +80,11 @@ body {
     font-weight: 400;
 }
 
+[class*=icon].fab:before {
+    font-family: 'Font Awesome 5 Brands', sans-serif;
+    font-weight: 400;
+}
+
 [data-translate] {
     display: none;
 }
