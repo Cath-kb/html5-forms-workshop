@@ -52,6 +52,21 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
      * Font Awesome Icons Gallery: [fontawesome.com](https://fontawesome.com/icons?d=gallery)
      * Web Fonts with CSS: [fontawesome.com](https://fontawesome.com/get-started/web-fonts-with-css)
 
+5. Part V
+
+    Discussion about current layout content grouping and splitting, styling methods applying, inputs' styling technique. No Links
+
+6. Part VI
+
+    Links:
+     * A Complete Guide to the Table Element: [css-tricks.com](https://css-tricks.com/complete-guide-table-element/)
+     * Styling tables: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Styling_tables)
+     * Styling tables: [webref.ru](https://webref.ru/layout/html5-css3/table/style) (ru)
+     * border-collapse CSS property: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)
+     * border-spacing CSS property: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing)
+     * table-layout CSS property: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout)
+
+
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
 Used Icons List: [cath-kb.github.io/html5-forms-workshop/icons.html](https://cath-kb.github.io/html5-forms-workshop/icons.html)
