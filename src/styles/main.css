@@ -100,6 +100,10 @@ body {
     text-transform: uppercase;
 }
 
+.title-icon {
+    font-weight: bold;
+}
+
 .title-icon:before {
     font-size: 2em;
     margin-right: .5em;
@@ -129,6 +133,95 @@ body {
 
 .table-summary td {
     color: #a5abc5;
+}
+
+.section-summary .buttons-group button {
+    width: 100%;
+}
+
+.section-summary .buttons-group button:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.button-primary {
+    color: #fff;
+    background-color: #5fcac6;
+    border-color: #4daca9;
+}
+
+.support-info {
+    color: #a3a0b4;
+}
+
+.support-info-address {
+    font-style: normal;
+}
+
+.support-info-address a {
+    color: #636e88;
+}
+
+.support-info-address a:hover,
+.support-info-address a:focus {
+    opacity: .8;
+    text-decoration: none;
+}
+
+.border-bottom {
+    display: inline-block;
+    position: relative;
+}
+
+.border-bottom:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    border-bottom: 1px solid #d2d3dc;
+}
+
+.section-form > h1 {
+    margin: 2em auto 4em;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #6a718b;
+}
+
+.section-form > h1 .border-bottom {
+    padding-bottom: .4em;
+}
+
+.translate-type {
+    display: block;
+    border: 6px solid;
+    position: relative;
+}
+
+input[type=radio].translate-type-input:checked + label.translate-type {
+    border-color: #75a7e1;
+}
+
+.translate-type:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    font-size: 2.4em;
+    position: absolute;
+    right: -.4em;
+    top: -.4em;
+    width: .8em;
+    line-height: .8em;
+    text-indent: -.1em;
+    color: #75a7e1;
+    background-color: #fff;
+    display: none;
+    z-index: 1;
+}
+
+.translate-type-input:checked + .translate-type:before {
+    display: block;
 }
 
 [class*=icon] {
