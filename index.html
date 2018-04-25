@@ -44,22 +44,30 @@
                     <button type="button" class="button button-secondary">print a quote</button>
                 </div>
                 <div class="support-info">
-                    <h2 class="title">help center</h2>
+                    <h2 class="title title-icon far fa-life-ring">help center</h2>
                     <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
-                    <address>
+                    <address class="support-info-address">
                         <a href="tel:+9710555555">+971(0) 555 555</a>
                         <a href="mailto:help@qtest.to">help@qtest.to</a>
                     </address>
                 </div>
             </section>
             <section class="section section-form">
-                <h1>Select what you want to translate</h1>
-                <input type="radio" id="website" name="translateType">
-                <label for="website" class="translate-type">Website</label>
-                <input type="radio" class="" id="documents" name="translateType" checked>
-                <label for="documents" class="translate-type">Documents</label>
-                <input type="radio" class="" id="social" name="translateType">
-                <label for="social" class="translate-type">Social account</label>
+                <h1>
+                    <span class="border-bottom">Select what you want to translate</span>
+                </h1>
+                <input type="radio" class="translate-type-input" id="website" name="translateType">
+                <label for="website" class="translate-type">
+                    <span>Website</span>
+                </label>
+                <input type="radio" class="translate-type-input" id="documents" name="translateType" checked>
+                <label for="documents" class="translate-type">
+                    <span>Documents</span>
+                </label>
+                <input type="radio" class="translate-type-input" id="social" name="translateType">
+                <label for="social" class="translate-type">
+                    <span>Social account</span>
+                </label>
                 <form action="#" class="form" id="formOrder">
                     <fieldset class="form-group count-group" data-translate="website">
                         <legend>Paste URL to your website</legend>
