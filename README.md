@@ -66,9 +66,28 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
      * border-spacing CSS property: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing)
      * table-layout CSS property: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout)
 
-6. Part VII
+7. Part VII
 
     Working on HTML elements styling. No Links
+    
+8. Part VIII
+
+    Working on HTML elements styling. No Links
+    
+    *HomeWork*: Please create using only HTML & CSS:
+     
+     1. 2-3 "radio" blocks on the page to choose, with next parameters:
+        - border radius: 4px
+        - border width: 1px
+     2. The same number of "content" blocks related with appropriate "radio" block above
+     3. Only "content" block related with selected "radio" should be shown. Other "content" blocks should be hidden.
+     4. Selected "radio" block should contains:
+        - border width: 4px
+        - shadow
+        - some additional visible element (for instance: check mark on the corner of the selected "radio")
+     5. "radio" block should be available to select by mouse, by keyboard etc.
+        
+     Please see [example](https://codepen.io/Cath-kb/full/wjjWqd/) for more info.
 
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
