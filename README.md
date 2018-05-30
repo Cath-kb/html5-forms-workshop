@@ -88,6 +88,10 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
      5. "radio" block should be available to select by mouse, by keyboard etc.
         
      Please see [example](https://codepen.io/Cath-kb/full/wjjWqd/) for more info.
+     
+9. Part IX
+
+    Working on HTML elements styling. No Links
 
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
