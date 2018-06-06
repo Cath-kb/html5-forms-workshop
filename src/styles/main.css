@@ -50,13 +50,16 @@ body {
     background-image: url("../images/logo-black-02.png");
 }
 
-.button {
-    display: inline-block;
-    padding: 1em 2em;
-    font-size: 1em;
-    line-height: 1;
-    font-weight: bold;
+.label {
     text-transform: uppercase;
+    color: #a5abc5;
+}
+
+.button, .select {
+    display: inline-block;
+    padding: .8em 2em;
+    font-size: 1em;
+    line-height: 1.4;
     text-decoration: none;
     outline: none;
     color: #a5abc5;
@@ -66,14 +69,44 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
+.button {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.select {
+    padding-right: 3em;
+    background-image: url("../images/select_arrow.png"),
+    linear-gradient(-90deg, transparent calc(3em - 1px), #c9d0e1 calc(3em - 1px), #c9d0e1 3em, transparent 3em);
+    background-position: right 1em center, right;
+    background-repeat: no-repeat;
+    background-size: 1em, auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.select::-ms-expand {
+    display: none; /* to ie 10 */
+}
+
+.select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #a5abc5;
+}
+
+.button:hover, .select:hover {
     opacity: .8;
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
 }
 
 .button:focus,
+.select:focus,
 .file-input:focus + .button,
 .button:active,
+.select:active,
 .file-input:active + .button {
     border-color: #a5abc5;
     box-shadow: 0 0 14px rgba(0, 0, 0, .3);
@@ -149,12 +182,30 @@ body {
     border-radius: var(--border-radius);
 }
 
+.table-files-list .col-file {
+    width: 40%;
+}
+
+.table-files-list .col-size {
+    width: 20%;
+}
+
+.table-files-list .col-amount {
+    width: 30%;
+}
+
+.table-files-list .col-button {
+    width: 10%;
+}
+
 .table-files-list th {
     color: #a5abc5;
 }
 
 .table th, .table td {
     padding: .5em 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .table-files-list td {
@@ -166,6 +217,15 @@ body {
     font-family: "Font Awesome 5 Free", sans-serif;
     font-weight: 900;
     margin-right: .5em;
+}
+
+.table-files-list .file-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-files-list .file-remove-cell {
+    text-align: center;
 }
 
 .section-summary .buttons-group button {
@@ -348,6 +408,7 @@ input[id=social]:checked ~ form [data-translate=social] {
     content: counter(count);
     counter-increment: count;
     position: absolute;
+    top: -.4em;
     left: -1.8em;
     width: 1.8em;
     line-height: 1.8em;
@@ -383,13 +444,51 @@ input[id=social]:checked ~ form [data-translate=social] {
     clip: rect(0, 0, 0, 0);
 }
 
+.button-remove {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0;
+    color: #a5abc5;
+    cursor: pointer;
+}
+
+.button-remove:before {
+    content: '\f1f8';
+    font-size: var(--font-size-base);
+}
+
+.button-remove:hover {
+    opacity: 0.8;
+}
+
+.button-remove:focus {
+    text-shadow: 0 0 10px #76a7e1;
+}
+
 .form-group-row {
     margin-bottom: 2em;
 }
 
+.lang-group .select,
+.lang-group .button {
+    margin-left: 1.2rem;
+}
+
+.lang-group .label:first-child {
+    display: inline-block;
+    width: 4ch;
+    text-align: right;
+}
+
+label.lang-additional {
+    position: absolute;
+    clip-path: inset(50%);
+    clip: rect(0, 0, 0, 0);
+}
+
 [class*=icon] {
     font-family: sans-serif;
-    display: inherit;
 }
 
 [class*=icon]:before, [class*=icon].fa:before, [class*=icon].fas:before {

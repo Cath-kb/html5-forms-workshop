@@ -91,13 +91,18 @@
                         </div>
                         <div class="form-group-row">
                             <table class="table table-files-list">
-                                <colgroup span="4"></colgroup>
+                                <colgroup>
+                                    <col class="col-file">
+                                    <col class="col-size">
+                                    <col class="col-amount">
+                                    <col class="col-button">
+                                </colgroup>
                                 <thead>
                                 <tr>
                                     <th>file name</th>
                                     <th>file size</th>
                                     <th>number of words</th>
-                                    <th>remove</th>
+                                    <th class="file-remove-cell">remove</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -132,11 +137,11 @@
                             <input type="text" id="socialId" name="socialId">
                         </div>
                     </fieldset>
-                    <fieldset class="form-group count-group fieldset-unstyled">
+                    <fieldset class="form-group count-group fieldset-unstyled lang-group">
                         <legend class="legend-styled">Choose your languages pairings</legend>
                         <div class="form-group-row">
-                            <label for="langFrom">from</label>
-                            <select class="select" id="langFrom">
+                            <label for="langFrom" class="label">from</label>
+                            <select class="select" id="langFrom" title="select original language">
                                 <option value="ar">Arabic</option>
                                 <option value="zh">Chinese (Mandarin)</option>
                                 <option value="nl">Dutch</option>
@@ -148,8 +153,8 @@
                             </select>
                         </div>
                         <div class="form-group-row">
-                            <label for="langTo">To</label>
-                            <select class="select" id="langTo">
+                            <label for="langTo" class="label">To</label>
+                            <select class="select" id="langTo" title="select language to translate">
                                 <option value="ar">Arabic</option>
                                 <option value="zh">Chinese (Mandarin)</option>
                                 <option value="nl">Dutch</option>
@@ -160,7 +165,7 @@
                                 <option value="uk">Ukrainian</option>
                             </select>
                             <label for="langTo2" class="lang-additional">additional language</label>
-                            <select class="select" id="langTo2">
+                            <select class="select" id="langTo2" title="select language to translate">
                                 <option value="ar">Arabic</option>
                                 <option value="zh">Chinese (Mandarin)</option>
                                 <option value="nl">Dutch</option>
@@ -170,8 +175,8 @@
                                 <option value="pt">Portuguese</option>
                                 <option value="uk">Ukrainian</option>
                             </select>
-                            <button type="button" class="remove lang-additional" data-lang="langTo2">remove additional language</button>
-                            <button type="button" class="add">add language</button>
+                            <button type="button" class="icon-button button-remove lang-additional" data-lang="langTo2" title="remove additional language">remove additional language</button>
+                            <button type="button" class="button button-icon button-add fas fa-plus" title="add language">add</button>
                         </div>
                     </fieldset>
                     <fieldset class="count-group tones-group fieldset-unstyled">

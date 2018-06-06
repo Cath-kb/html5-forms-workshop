@@ -92,6 +92,12 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
 9. Part IX
 
     Working on HTML elements styling. No Links
+    
+10. Part X
+
+    Working on HTML elements styling (table, select)
+    
+    Styled select examples [link](https://codepen.io/Cath-kb/pen/KepEJE?editors=1100)
 
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
