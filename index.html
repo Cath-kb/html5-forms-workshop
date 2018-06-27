@@ -181,17 +181,25 @@
                     </fieldset>
                     <fieldset class="count-group tones-group fieldset-unstyled">
                         <legend class="legend-styled">Select your desired tone</legend>
-                        <label class="tone-friendly" for="toneFriendly">Friendly&nbsp;Casual</label>
-                        <input type="radio" id="toneFriendly" name="tones" checked />
-                        <label class="tone-pro" for="tonePro">Corporate&nbsp;Pro</label>
-                        <input type="radio" id="tonePro" name="tones" />
-                        <label class="tone-media" for="toneMedia">Media&nbsp;Formal</label>
-                        <input type="radio" id="toneMedia" name="tones" />
+                        <input class="tone-input" type="radio" id="toneFriendly" name="tones" checked />
+                        <label class="tone-label tone-friendly" for="toneFriendly">
+                            <span class="tone-title tone-icon fas fa-comments">Friendly&nbsp;Casual</span>
+                        </label>
+                        <input class="tone-input" type="radio" id="tonePro" name="tones" />
+                        <label class="tone-label tone-pro" for="tonePro">
+                            <span class="tone-title tone-icon fa fa-suitcase">Corporate&nbsp;Pro</span>
+                        </label>
+                        <input class="tone-input" type="radio" id="toneMedia" name="tones" />
+                        <label class="tone-label tone-media" for="toneMedia">
+                            <span class="tone-title tone-icon fas fa-bullhorn">Media&nbsp;Formal</span>
+                        </label>
                     </fieldset>
                     <fieldset class="count-group fieldset-unstyled">
                         <legend class="legend-styled">Tell us how urgent this job is</legend>
                         <div class="range-wrap time-line">
-                            <input type="range" id="timeLine" name="timeLane" value="2" min="1" max="3" step="1" />
+                            <div class="range-input-wrap">
+                                <input type="range" id="timeLine" name="timeLine" value="2" min="1" max="3" step="1" />
+                            </div>
                             <div class="range-titles">
                                 <span class="title range-title">I got time</span>
                                 <span class="title range-title">Average</span>
