@@ -176,7 +176,7 @@ body {
     color: #6d759d;
 }
 
-.table-files-list {
+.bordered {
     padding: 1em;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
@@ -513,6 +513,14 @@ input.tone-input:checked + label.tone-label {
     margin-right: 1.2em;
 }
 
+.range-wrap {
+    margin-bottom: 2em;
+}
+
+.range-input-wrap {
+    margin-bottom: 1em;
+}
+
 input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
     width: 100%; /* Specific width is required for Firefox. */
@@ -663,6 +671,62 @@ input[type=range]:focus::-ms-track {
 
 .range-title:last-child {
     margin-right: -10%;
+}
+
+.timeline-info {
+    padding-left: 7em;
+    color: #a5abc5;
+    line-height: 1.6;
+}
+
+.timeline-info .title {
+    font-size: calc(var(--font-size-base) * 1.2);
+}
+
+.info-link {
+    position: relative;
+    color: #edbe75;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.info-link:before {
+    content: attr(data-title);
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    width: 20ch;
+    padding: 1em;
+    top: 100%;
+    margin-top: .5em;
+    z-index: 2;
+    left: 50%;
+    margin-left: -10ch;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.2;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    display: none;
+}
+
+.info-link:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom: 0;
+    margin-bottom: -.5em;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, .8);
+    display: none;
+}
+
+.info-link:hover:before,
+.info-link:hover:after {
+    display: block;
 }
 
 [class*=icon] {

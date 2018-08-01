@@ -98,13 +98,19 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
     Working on HTML elements styling (table, select)
     
     Styled select examples [link](https://codepen.io/Cath-kb/pen/KepEJE?editors=1100)
-    
+
 11. Part XI
 
     Links:
     * Styling Cross-Browser Compatible Range Inputs with CSS [css-tricks.com](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
     * CSS Images Module Level 3 Specification [drafts.csswg.org](https://drafts.csswg.org/css-images-3/#radial-gradients) (§3.2 Radial Gradients)
     * Radial Gradients in CSS [css.yoksel.ru](http://css.yoksel.ru/radial-gradients/) (ru)
+
+12. Part XII
+
+    Links:
+    * Drawing Triangles in CSS [link](https://moduscreate.com/blog/drawing-triangles-in-css/)
+    * CSS Tooltip Generator [link](https://www.cssportal.com/css-tooltip-generator/)
 
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
