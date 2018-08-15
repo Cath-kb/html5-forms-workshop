@@ -112,6 +112,13 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
     * Drawing Triangles in CSS [link](https://moduscreate.com/blog/drawing-triangles-in-css/)
     * CSS Tooltip Generator [link](https://www.cssportal.com/css-tooltip-generator/)
 
+13. Part XIII
+
+    Links:
+    * Form data validation [link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation)
+    * Form Validation UX in HTML and CSS [link](https://css-tricks.com/form-validation-ux-html-css/)
+    * input type="date" [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
+
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
 Used Icons List: [cath-kb.github.io/html5-forms-workshop/icons.html](https://cath-kb.github.io/html5-forms-workshop/icons.html)

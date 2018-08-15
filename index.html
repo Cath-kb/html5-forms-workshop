@@ -213,26 +213,48 @@
                     </fieldset>
                     <fieldset class="form-group count-group fieldset-unstyled">
                         <legend class="legend-styled">Sign up and choose a payment method</legend>
-                        <p class="form-group-row">Already have account with us? <a href="javascript:void(0);" class="link">Sign in</a>.</p>
+                        <p class="form-group-row signup-text">Already have account with us? <a href="javascript:void(0);" class="link">Sign in</a>.</p>
                         <div class="form-group-row">
                             <div class="form-group-col">
-                                <label for="userName">full name</label>
-                                <input type="text" id="userName" name="userName" placeholder="John Doy" pattern="[a-zA-Z\s]+" title="Please enter valid user name. It should contains only letters and whitespaces." />
+                                <label for="userName" class="label">full name</label>
+                                <div class="input-wrap input-text-wrap validation-error-wrap">
+                                    <input type="text"
+                                           id="userName"
+                                           name="userName"
+                                           class="input"
+                                           placeholder="John Doy"
+                                           pattern="[a-zA-Z\s]+"
+                                           title="Please enter valid user name. It should contains only letters and whitespaces." />
+                                    <span class="input-validity-state"></span>
+                                    <div class="validation-error-message">Oops... Something is wrong....</div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group-row">
                             <div class="form-group-col">
-                                <label for="userEmail">email address</label>
-                                <input type="email" id="userEmail" name="userEmail" placeholder="example@me.com" title="Please enter valid email address." />
+                                <label for="userEmail" class="label">email address</label>
+                                <div class="input-wrap input-text-wrap">
+                                    <input type="email"
+                                           id="userEmail"
+                                           name="userEmail"
+                                           class="input"
+                                           placeholder="example@me.com"
+                                           title="Please enter valid email address." />
+                                    <span class="input-validity-state"></span>
+                                </div>
                             </div>
                             <div class="form-group-col">
-                                <label for="userPassword">choose a password</label>
-                                <input type="password"
-                                       id="userPassword"
-                                       name="userPassword"
-                                       placeholder="Password"
-                                       pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                                       title="Please enter valid password. It should contain upperCase, lowerCase and number."/>
+                                <label for="userPassword" class="label">choose a password</label>
+                                <div class="input-wrap input-text-wrap">
+                                    <input type="password"
+                                           id="userPassword"
+                                           name="userPassword"
+                                           class="input"
+                                           placeholder="Password"
+                                           pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                                           title="Please enter valid password. It should contain upperCase, lowerCase and number."/>
+                                    <span class="input-validity-state"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group-row payment-method-group">
@@ -251,17 +273,36 @@
                         </div>
                         <div class="form-group-row">
                             <div class="form-group-col">
-                                <div class="form-group-col">
-                                    <label for="cardNum">card number</label>
-                                    <input type="text" id="cardNum" name="cardNum" placeholder="XXXX XXXX XXXX XXXX" pattern="((\d){4}[\s-]?){4}" title="Please enter valid card number." />
+                                <label for="cardNum" class="label">card number</label>
+                                <div class="input-wrap input-text-wrap">
+                                    <input type="text"
+                                           id="cardNum"
+                                           name="cardNum"
+                                           class="input input-card"
+                                           placeholder="XXXX XXXX XXXX XXXX"
+                                           pattern="((\d){4}[\s-]?){4}"
+                                           title="Please enter valid card number." />
+                                    <span class="input-validity-state"></span>
                                 </div>
-                                <div class="form-group-col">
-                                    <label for="cardExpDate">expiry date</label>
-                                    <input type="date" id="cardExpDate" name="cardExpDate" min="2018-02-08" />
+                            </div>
+                            <div class="form-group-col">
+                                <label for="cardExpDate" class="label">expiry date</label>
+                                <div class="input-wrap input-text-wrap">
+                                    <input type="date" id="cardExpDate" name="cardExpDate" class="input" min="2018-08-15" value="2018-08-15" />
+                                    <span class="input-validity-state"></span>
                                 </div>
-                                <div class="form-group-col">
-                                    <label for="cardCVV">code</label>
-                                    <input type="password" id="cardCVV" name="cardCVV" placeholder="111" pattern="(\d){3}" title="Please enter valid CVV (3 digits)" />
+                            </div>
+                            <div class="form-group-col">
+                                <label for="cardCVV" class="label">code</label>
+                                <div class="input-wrap input-text-wrap">
+                                    <input type="password"
+                                           id="cardCVV"
+                                           name="cardCVV"
+                                           class="input"
+                                           placeholder="111"
+                                           pattern="(\d){3}"
+                                           title="Please enter valid CVV (3 digits)" />
+                                    <span class="input-validity-state"></span>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +310,7 @@
                     <div class="form-group finalize-group text-right">
                         <input id="terms" name="terms" type="checkbox" />
                         <label for="terms">I agree to the
-                            <a href="javascript:void(0);">Terms&nbsp;&amp;&nbsp;Conditions</a>
+                            <a href="javascript:void(0);" class="link">Terms&nbsp;&amp;&nbsp;Conditions</a>
                         </label>
                         <button type="submit" class="button button-primary">place order</button>
                         <button type="button" class="button button-secondary">print a quote</button>

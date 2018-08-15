@@ -55,17 +55,20 @@ body {
     color: #a5abc5;
 }
 
-.button, .select {
+.button, .select, .input {
     display: inline-block;
     padding: .8em 2em;
     font-size: 1em;
     line-height: 1.4;
     text-decoration: none;
     outline: none;
-    color: #a5abc5;
-    background: #eceef4;
     border: 1px solid #c9d0e1;
     border-radius: var(--border-radius);
+}
+
+.button, .select {
+    color: #a5abc5;
+    background: #eceef4;
     cursor: pointer;
 }
 
@@ -97,7 +100,7 @@ body {
     text-shadow: 0 0 0 #a5abc5;
 }
 
-.button:hover, .select:hover {
+.button:hover, .select:hover, .input:hover {
     opacity: .8;
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
 }
@@ -110,6 +113,12 @@ body {
 .file-input:active + .button {
     border-color: #a5abc5;
     box-shadow: 0 0 14px rgba(0, 0, 0, .3);
+}
+
+.input:focus,
+.input:active {
+    border-color: #75a7e1;
+    box-shadow: 0 0 14px rgba(117, 117, 225, .8);
 }
 
 .button-icon:before {
@@ -474,7 +483,7 @@ input[id=social]:checked ~ form [data-translate=social] {
     text-shadow: 0 0 10px #76a7e1;
 }
 
-.form-group-row {
+.form-group-row, .form-group-col {
     margin-bottom: 2em;
 }
 
@@ -727,6 +736,93 @@ input[type=range]:focus::-ms-track {
 .info-link:hover:before,
 .info-link:hover:after {
     display: block;
+}
+
+.signup-text {
+    font-size: 1.2em;
+    color: #a4b5d1;
+}
+
+.link {
+    color: inherit;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.link:focus,
+.link:active {
+    opacity: .8;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.validation-error-wrap {
+    margin-bottom: 2em;
+}
+
+.input-wrap .input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input:invalid {
+    border-color: #f00;
+}
+
+.input + .input-validity-state:before {
+    content: '';
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    font-size: 1.6em;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    right: 10px;
+}
+
+.input:not(:placeholder-shown):valid + .input-validity-state:before {
+    content: '\f058';
+    color: #75a7e1;
+}
+
+.input:invalid + .input-validity-state:before {
+    content: '\f057';
+    color: #e17776;
+}
+
+.validation-error-message {
+    position: absolute;
+    top: 100%;
+    margin-top: .2em;
+    color: #f00;
+    opacity: 0;
+    transition: opacity ease-in .1s;
+}
+
+.input:invalid ~ .validation-error-message {
+    opacity: 1;
+}
+
+.input-card {
+    background: url(../images/visa-grayscale.png) no-repeat;
+    background-size: 4em;
+    background-position: right .5em center;
+    transition: background-position .2s;
+}
+
+.input-card:not(:placeholder-shown) {
+    background-position: right 3em center;
+}
+
+.form-group-col .label {
+    display: inline-block;
+    margin: .4em 1em;
 }
 
 [class*=icon] {
