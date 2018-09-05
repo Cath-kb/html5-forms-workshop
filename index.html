@@ -258,17 +258,17 @@
                             </div>
                         </div>
                         <div class="form-group-row payment-method-group">
-                            <label for="visaMaster">
+                            <input type="radio" id="visaMaster" name="paymentMethod" class="payment-input" value="0">
+                            <label for="visaMaster" class="payment-label payment-visa">
                                 <span>Visa or MaterCard</span>
-                                <input type="radio" id="visaMaster" name="paymentMethod">
                             </label>
-                            <label for="payPal">
+                            <input type="radio" id="payPal" name="paymentMethod" class="payment-input" value="1">
+                            <label for="payPal" class="payment-label payment-paypal">
                                 <span>PayPal</span>
-                                <input type="radio" id="payPal" name="paymentMethod">
                             </label>
-                            <label for="amazon">
+                            <input type="radio" id="amazon" name="paymentMethod" class="payment-input" value="2">
+                            <label for="amazon" class="payment-label payment-amazon">
                                 <span>amazon</span>
-                                <input type="radio" id="amazon" name="paymentMethod">
                             </label>
                         </div>
                         <div class="form-group-row">
@@ -288,7 +288,7 @@
                             <div class="form-group-col">
                                 <label for="cardExpDate" class="label">expiry date</label>
                                 <div class="input-wrap input-text-wrap">
-                                    <input type="date" id="cardExpDate" name="cardExpDate" class="input" min="2018-08-15" value="2018-08-15" />
+                                    <input type="date" id="cardExpDate" name="cardExpDate" class="input" min="2018-08-15" value="2018-08-15"  />
                                     <span class="input-validity-state"></span>
                                 </div>
                             </div>

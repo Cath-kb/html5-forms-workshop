@@ -119,6 +119,10 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
     * Form Validation UX in HTML and CSS [link](https://css-tricks.com/form-validation-ux-html-css/)
     * input type="date" [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
 
+14. Part XIV
+
+    Working on HTML elements styling. No Links
+
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
 Used Icons List: [cath-kb.github.io/html5-forms-workshop/icons.html](https://cath-kb.github.io/html5-forms-workshop/icons.html)

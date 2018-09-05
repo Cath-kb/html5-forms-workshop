@@ -300,7 +300,8 @@ body {
 }
 
 .translate-type,
-.tone-label {
+.tone-label,
+.payment-label {
     margin: 2rem auto;
     display: block;
     border: 1px solid #d2d5dc;
@@ -312,19 +313,23 @@ body {
 }
 
 .translate-type:hover,
-.tone-label:hover {
+.tone-label:hover,
+.payment-label:hover {
     box-shadow: 0 0 10px #000;
 }
 
 .translate-type-input,
-.tone-input {
+.tone-input,
+.payment-input,
+.payment-label > span {
     position: absolute;
     clip-path: inset(50%);
     clip: rect(0, 0, 0, 0);
 }
 
 input.translate-type-input:checked + label.translate-type,
-input.tone-input:checked + label.tone-label {
+input.tone-input:checked + label.tone-label,
+input.payment-input:checked + label.payment-label {
     border-width: 6px;
     border-color: #75a7e1;
     padding: 0;
@@ -333,13 +338,16 @@ input.tone-input:checked + label.tone-label {
 
 input.translate-type-input:checked + label.translate-type:hover,
 input.tone-input:checked + label.tone-label:hover,
+input.payment-input:checked + label.payment-label:hover,
 input.translate-type-input:checked:focus + label.translate-type,
-input.tone-input:checked:focus + label.tone-label {
+input.tone-input:checked:focus + label.tone-label,
+input.payment-input:checked:focus + label.payment-label {
     box-shadow: inset 0 0 0 1px #fff, 0 0 10px #000;
 }
 
 .translate-type:before,
-.tone-label:before {
+.tone-label:before,
+.payment-label:before {
     content: '\f058';
     font-family: "Font Awesome 5 Free", sans-serif;
     font-weight: 900;
@@ -358,7 +366,8 @@ input.tone-input:checked:focus + label.tone-label {
 }
 
 .translate-type-input:checked + .translate-type:before,
-.tone-input:checked + .tone-label:before {
+.tone-input:checked + .tone-label:before,
+.payment-input:checked + .payment-label:before {
     display: block;
 }
 
@@ -756,6 +765,25 @@ input[type=range]:focus::-ms-track {
     opacity: .8;
 }
 
+.payment-label {
+    height: 8em;
+    background-size: auto 3.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.payment-label.payment-visa {
+    background-image: url("../images/payment-visamastercard.png");
+}
+
+.payment-label.payment-paypal {
+    background-image: url("../images/payment-paypal.png");
+}
+
+.payment-label.payment-amazon {
+    background-image: url("../images/payment-amazon.png");
+}
+
 .input-wrap {
     position: relative;
 }
@@ -823,6 +851,18 @@ input[type=range]:focus::-ms-track {
 .form-group-col .label {
     display: inline-block;
     margin: .4em 1em;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.finalize-group .button {
+    margin-left: 1em;
+}
+
+.finalize-group input[type=checkbox] {
+    vertical-align: middle;
 }
 
 [class*=icon] {
