@@ -127,6 +127,30 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
 
     Working on HTML elements styling. No Links
 
+16. Part XVI
+
+    Links:
+    * Using Media Queries For Responsive Design In 2018 [smashingmagazine.com](https://www.smashingmagazine.com/2018/02/media-queries-responsive-design-2018/)
+    * How To Write Mobile-first CSS [zellwk.com](https://zellwk.com/blog/how-to-write-mobile-first-css/)
+    * Typical Screen metrics: [mydevice.io](https://www.mydevice.io/)
+    * Screen resolutions statistics: [statcounter.com](http://gs.statcounter.com/screen-resolution-stats)
+    * Breakpoints implementation Bootstrap 4: [getbootstrap.com/docs/4.1](https://getbootstrap.com/docs/4.1/layout/grid/#all-breakpoints)
+    * Breakpoints implementation Bootstrap 3: [getbootstrap.com/docs/3.3](https://getbootstrap.com/docs/3.3/css/#grid-media-queries) 
+    * Breakpoints implementation Material-UI: [material-ui.com](https://material-ui.com/layout/breakpoints/)
+    * The Difference Between Responsive and Adaptive Design [css-tricks.com](https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/)
+    * Web Design- Responsive vs Adaptive & Fixed vs Fluid Layout [medium.com/@wordpraxltd](https://medium.com/@wordpraxltd/web-design-responsive-vs-adaptive-fixed-vs-fluid-layout-87524e089a7a)
+
+    *HomeWork*:
+
+    Please create HTML table and style it using mobile-first approach.
+
+    *Requirements*:
+    * Table should be created using HTML [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) markup. 
+    * Styles should contain minimum 2 breakpoints with different table cells view.
+
+    See [example](https://codepen.io/Cath-kb/full/MqZoNj/) for more info (change viewport width to see the result).
+
+
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  
 Used Icons List: [cath-kb.github.io/html5-forms-workshop/icons.html](https://cath-kb.github.io/html5-forms-workshop/icons.html)
