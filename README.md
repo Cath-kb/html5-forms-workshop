@@ -150,6 +150,10 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
 
     See [example](https://codepen.io/Cath-kb/full/MqZoNj/) for more info (change viewport width to see the result).
 
+17. Part XVII
+
+    Working on HTML elements styling. Finalizing mobile-first approach elements styling. No Links
+
 
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  

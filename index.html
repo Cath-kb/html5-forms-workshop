@@ -8,9 +8,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="javascript:void(0);" class="button button-icon fas fa-long-arrow-alt-left">go back</a>
+            <a href="javascript:void(0);" class="header-button button button-icon fas fa-long-arrow-alt-left">go back</a>
             <a href="javascript:void(0);" class="logo" title="Home">logo</a>
-            <button type="button" class="button button-icon fas fa-user">sign in</button>
+            <button type="button" class="header-button button button-icon fas fa-user">sign in</button>
         </div>
     </header>
     <main class="main">
@@ -19,7 +19,7 @@
                 <h1>Form</h1>
                 <div class="order-info">
                     <h2 class="title title-icon title-order">your order</h2>
-                    <table class="table table-summary">
+                    <table class="table table-desktop table-summary">
                         <colgroup span="4"></colgroup>
                         <thead>
                             <tr>
@@ -36,6 +36,27 @@
                                 <td>$&nbsp;696.06</td>
                                 <td>48 hours*</td>
                             </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-mobile table-summary">
+                        <colgroup span="2"></colgroup>
+                        <tbody>
+                        <tr>
+                            <th>items</th>
+                            <td>2 documents</td>
+                        </tr>
+                        <tr>
+                            <th>details</th>
+                            <td>2 languages</td>
+                        </tr>
+                        <tr>
+                            <th>price</th>
+                            <td>$&nbsp;696.06</td>
+                        </tr>
+                        <tr>
+                            <th>delivery</th>
+                            <td>48 hours*</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -139,9 +160,9 @@
                     </fieldset>
                     <fieldset class="form-group count-group fieldset-unstyled lang-group">
                         <legend class="legend-styled">Choose your languages pairings</legend>
-                        <div class="form-group-row">
-                            <label for="langFrom" class="label">from</label>
-                            <select class="select" id="langFrom" title="select original language">
+                        <div class="form-group-row form-group-horizontal">
+                            <label for="langFrom" class="form-group-col label">from</label>
+                            <select class="form-group-col select" id="langFrom" title="select original language">
                                 <option value="ar">Arabic</option>
                                 <option value="zh">Chinese (Mandarin)</option>
                                 <option value="nl">Dutch</option>
@@ -152,31 +173,36 @@
                                 <option value="uk">Ukrainian</option>
                             </select>
                         </div>
-                        <div class="form-group-row">
-                            <label for="langTo" class="label">To</label>
-                            <select class="select" id="langTo" title="select language to translate">
-                                <option value="ar">Arabic</option>
-                                <option value="zh">Chinese (Mandarin)</option>
-                                <option value="nl">Dutch</option>
-                                <option value="en" selected>English</option>
-                                <option value="fr">French</option>
-                                <option value="de">German</option>
-                                <option value="pt">Portuguese</option>
-                                <option value="uk">Ukrainian</option>
-                            </select>
-                            <label for="langTo2" class="lang-additional">additional language</label>
-                            <select class="select" id="langTo2" title="select language to translate">
-                                <option value="ar">Arabic</option>
-                                <option value="zh">Chinese (Mandarin)</option>
-                                <option value="nl">Dutch</option>
-                                <option value="en" selected>English</option>
-                                <option value="fr">French</option>
-                                <option value="de">German</option>
-                                <option value="pt">Portuguese</option>
-                                <option value="uk">Ukrainian</option>
-                            </select>
-                            <button type="button" class="icon-button button-remove lang-additional" data-lang="langTo2" title="remove additional language">remove additional language</button>
-                            <button type="button" class="button button-icon button-add fas fa-plus" title="add language">add</button>
+                        <div class="form-group-row form-group-horizontal">
+                            <label for="langTo" class="form-group-col label">To</label>
+                            <div class="form-group-col lang-group-wrapper">
+                                <select class="select" id="langTo" title="select language to translate">
+                                    <option value="ar">Arabic</option>
+                                    <option value="zh">Chinese (Mandarin)</option>
+                                    <option value="nl">Dutch</option>
+                                    <option value="en" selected>English</option>
+                                    <option value="fr">French</option>
+                                    <option value="de">German</option>
+                                    <option value="pt">Portuguese</option>
+                                    <option value="uk">Ukrainian</option>
+                                </select>
+                                <button type="button" class="icon-button button-remove lang-additional" data-lang="langTo" title="remove language">remove additional language</button>
+                            </div>
+                            <div class="form-group-col lang-group-wrapper">
+                                <label for="langTo2" class="lang-additional">additional language</label>
+                                <select class="select" id="langTo2" title="select language to translate">
+                                    <option value="ar">Arabic</option>
+                                    <option value="zh">Chinese (Mandarin)</option>
+                                    <option value="nl">Dutch</option>
+                                    <option value="en" selected>English</option>
+                                    <option value="fr">French</option>
+                                    <option value="de">German</option>
+                                    <option value="pt">Portuguese</option>
+                                    <option value="uk">Ukrainian</option>
+                                </select>
+                                <button type="button" class="icon-button button-remove lang-additional" data-lang="langTo2" title="remove language">remove additional language</button>
+                            </div>
+                            <button type="button" class="form-group-col button button-icon button-add fas fa-plus" title="add language">add</button>
                         </div>
                     </fieldset>
                     <fieldset class="count-group tones-group fieldset-unstyled">
@@ -307,13 +333,15 @@
                             </div>
                         </div>
                     </fieldset>
-                    <div class="form-group finalize-group text-right">
-                        <input id="terms" name="terms" type="checkbox" />
-                        <label for="terms">I agree to the
-                            <a href="javascript:void(0);" class="link">Terms&nbsp;&amp;&nbsp;Conditions</a>
-                        </label>
-                        <button type="submit" class="button button-primary">place order</button>
-                        <button type="button" class="button button-secondary">print a quote</button>
+                    <div class="form-group finalize-group form-group-horizontal">
+                        <div class="form-group-col">
+                            <input id="terms" name="terms" type="checkbox" />
+                            <label for="terms">I agree to the
+                                <a href="javascript:void(0);" class="link">Terms&nbsp;&amp;&nbsp;Conditions</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="form-group-col button button-primary">place order</button>
+                        <button type="button" class="form-group-col button button-secondary">print a quote</button>
                     </div>
                 </form>
             </section>

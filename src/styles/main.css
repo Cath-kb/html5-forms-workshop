@@ -18,7 +18,7 @@
 }
 
 body {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) * 1.6);
     font-family: var(--font-family-base);
     background-color: var(--bg-base-color);
 }
@@ -85,6 +85,13 @@ body {
     color: #a5abc5;
     background: #eceef4;
     cursor: pointer;
+}
+
+.button:not(.header-button),
+.select {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .button {
@@ -172,6 +179,11 @@ body {
     margin-top: -.2em;
 }
 
+h1.title-icon:before,
+h2.title-icon:before {
+    font-size: 1.4em;
+}
+
 .title-order:before {
     content: '\f382';
 }
@@ -195,9 +207,13 @@ body {
     color: #a5abc5;
 }
 
-.table-summary th {
+.table-summary.table-desktop th {
     width: 25%;
     color: #6d759d;
+}
+
+[class*=-desktop] {
+    display: none;
 }
 
 .bordered {
@@ -226,7 +242,28 @@ body {
     color: #a5abc5;
 }
 
-.table th, .table td {
+.table-files-list col:nth-child(2),
+.table-files-list col:nth-child(3),
+.table-files-list th:nth-child(2),
+.table-files-list th:nth-child(3),
+.table-files-list td:nth-child(2),
+.table-files-list td:nth-child(3) {
+    display: none;
+}
+
+.table.table-desktop th, .table.table-desktop td {
+    padding: .5em 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table.table-mobile th, .table.table-mobile td {
+    padding: .5em 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table.table-mobile th, .table.table-mobile td {
     padding: .5em 1em;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -513,13 +550,31 @@ input[id=social]:checked ~ form [data-translate=social] {
     text-shadow: 0 0 10px #76a7e1;
 }
 
-.form-group-row, .form-group-col {
+.form-group-row, :not(.form-group-horizontal) > .form-group-col {
     margin-bottom: 2em;
 }
 
 .lang-group .select,
 .lang-group .button {
-    margin-left: 1.2rem;
+    /*margin-left: 1.2rem;*/ /*ToDo: revert for desktop*/
+}
+
+.form-group-horizontal > .form-group-col:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.form-group-horizontal > .label + .form-group-col {
+    margin-top: .5rem;
+}
+
+.lang-group-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.lang-group-wrapper .select:not(:nth-last-child(1)) {
+    margin-right: .5rem;
 }
 
 .lang-group .label:first-child {
@@ -883,7 +938,7 @@ input[type=range]:focus::-ms-track {
     background-position: right 3em center;
 }
 
-.form-group-col .label {
+:not(.form-group-horizontal) > .form-group-col .label {
     display: inline-block;
     margin: .4em 1em;
 }
@@ -893,7 +948,7 @@ input[type=range]:focus::-ms-track {
 }
 
 .finalize-group .button {
-    margin-left: 1em;
+    /*margin-left: 1em;*/ /*ToDo: revert for desktop*/
 }
 
 .finalize-group input[type=checkbox] {
@@ -955,6 +1010,8 @@ input[type=range]:focus::-ms-track {
 }
 
 .footer .logo {
+    width: 24%;
+    padding-bottom: 24%;
     margin: auto;
 }
 
