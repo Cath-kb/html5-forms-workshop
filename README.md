@@ -154,6 +154,26 @@ link to template: [template](https://dribbble.com/shots/1322677-Checkout-Page/at
 
     Working on HTML elements styling. Finalizing mobile-first approach elements styling. No Links
 
+18. Part XVIII
+
+    Layout Grids overview
+
+    *HomeWork*:
+
+    Please create the simplest grid for [HTML-template](https://codepen.io/Cath-kb/pen/MPRBra) using different approaches (`float`, `inline-block`, `flex` etc.).
+
+    *Requirements*:
+    * Create grid based on 3 columns
+    * All columns within `.row` block should be located in 1 line by default
+    * Use 1-2 or even more different approaches
+    * `.col-auto` implementation is not necessary
+
+    *The simplest 3-column grid examples*:
+    * [grid](https://codepen.io/Cath-kb/pen/zMZPEj?editors=1100)
+    * [flex](https://codepen.io/Cath-kb/pen/OappQz?editors=1100)
+    * [float](https://codepen.io/Cath-kb/pen/bQqoYy?editors=1100)
+    * [inline-block](https://codepen.io/Cath-kb/pen/KrWXNO?editors=1100)
+    * [table](https://codepen.io/Cath-kb/pen/gQmGVJ?editors=1100)
 
 HTML validator: [validator.w3.org](https://validator.w3.org)  
 Demo: [cath-kb.github.io/html5-forms-workshop](https://cath-kb.github.io/html5-forms-workshop/index.html)  

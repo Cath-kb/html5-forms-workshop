@@ -147,6 +147,10 @@ body {
     padding-right: 1em;
 }
 
+.main {
+    margin: 2rem auto;
+}
+
 .main > .container {
     padding: var(--padding-global-vertical) var(--padding-global-hor) calc(var(--padding-global-vertical) * 2);
     border: 1px solid var(--border-color);

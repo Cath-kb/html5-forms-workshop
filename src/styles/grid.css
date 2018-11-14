@@ -1,3 +1,25 @@
 .container {
     margin: 0 2em;
 }
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2rem;
+}
+
+.grid-wrap {
+    flex-wrap: wrap;
+}
+
+.grid [class*=fr-] {
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+.fr-1,
+.fr-2,
+.fr-3,
+.fr-auto {
+    width: 100%;
+}
